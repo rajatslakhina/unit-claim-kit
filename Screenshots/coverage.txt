@@ -1,0 +1,25 @@
+Filename                            Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ConversionPolicy.swift                    1                 0   100.00%           1                 0   100.00%           6                 0   100.00%           0                 0         -
+UnitClaimChecker.swift                   15                 0   100.00%          13                 0   100.00%          40                 0   100.00%           0                 0         -
+DecimalText.swift                        26                 0   100.00%           7                 0   100.00%          39                 0   100.00%           0                 0         -
+Substance.swift                          10                 0   100.00%          10                 0   100.00%          25                 0   100.00%           0                 0         -
+NumberParser+Digits.swift                49                 0   100.00%          10                 0   100.00%          63                 0   100.00%           0                 0         -
+ConversionFinding.swift                  10                 0   100.00%           5                 0   100.00%          15                 0   100.00%           0                 0         -
+ConversionReport.swift                   37                 0   100.00%          15                 0   100.00%          55                 0   100.00%           0                 0         -
+Quantity.swift                            3                 0   100.00%           3                 0   100.00%           3                 0   100.00%           0                 0         -
+ConversionReader.swift                   43                 0   100.00%          13                 0   100.00%          76                 0   100.00%           0                 0         -
+Link.swift                               37                 0   100.00%          15                 0   100.00%          66                 0   100.00%           0                 0         -
+ConversionFinding+Wording.swift          30                 0   100.00%           9                 0   100.00%          58                 0   100.00%           0                 0         -
+QuantityScanner.swift                    55                 0   100.00%          17                 0   100.00%          91                 0   100.00%           0                 0         -
+UnitMatcher.swift                        49                 0   100.00%          11                 0   100.00%          48                 0   100.00%           0                 0         -
+Converter.swift                          19                 0   100.00%           9                 0   100.00%          32                 0   100.00%           0                 0         -
+ConversionEvaluator.swift                97                 0   100.00%          23                 0   100.00%         147                 0   100.00%           0                 0         -
+WrittenNumber.swift                      29                 0   100.00%          11                 0   100.00%          45                 0   100.00%           0                 0         -
+UnitCatalog.swift                         1                 0   100.00%           1                 0   100.00%           1                 0   100.00%           0                 0         -
+ConversionClaim.swift                     3                 0   100.00%           3                 0   100.00%           3                 0   100.00%           0                 0         -
+UnitDefinition.swift                      6                 0   100.00%           6                 0   100.00%          25                 0   100.00%           0                 0         -
+TextContext+Sentence.swift               55                 0   100.00%          24                 0   100.00%          87                 0   100.00%           0                 0         -
+UnitAlias.swift                          10                 0   100.00%          10                 0   100.00%          18                 0   100.00%           0                 0         -
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                   585                 0   100.00%         216                 0   100.00%         943                 0   100.00%           0                 0         -

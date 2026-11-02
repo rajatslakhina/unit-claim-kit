@@ -1,0 +1,102 @@
+UnitClaimKit demo: stated unit conversions, recomputed exactly
+
+[1] A recipe, converted for a metric kitchen
+    answer: "Preheat the oven to 350°F (175°C). Whisk 2 cups of flour (500 g) with 1 cup of sugar (200 g) and 1/2 cup of butter (113 g), then add 1 cup of milk (250 ml)."
+    ok 350°F (175°C)  ->  rounded as written
+    XX 2 cups of flour (500 g)  ->  wrong (weighed as water)
+    ok 1 cup of sugar (200 g)  ->  within the density range
+    ok 1/2 cup of butter (113 g)  ->  within the density range
+    ?? 1 cup of milk (250 ml)  ->  holds only for the metric cup (250 mL)
+    verdict: wrong (5 conversions checked, 3 hold, 1 to check, 1 wrong)
+    feedback to the model:
+      Some unit conversions in your answer do not hold:
+      - 2 cups of flour is 237 to 284 g, not 500 g. 500 g weighs 2 cups of flour as if it were water.
+      - 1 cup is 237 ml with the US cup; 250 ml holds only with the metric cup (250 mL).
+      Redo each one with the exact conversion factor, correct every figure that depends on it, and keep the rest of the answer as it is.
+    rewrite: "Preheat the oven to 350°F (175°C). Whisk 2 cups of flour (250 g) with 1 cup of sugar (200 g) and 1/2 cup of butter (113 g), then add 1 cup of milk (240 ml)."
+    ok 350°F (175°C)  ->  rounded as written
+    ok 2 cups of flour (250 g)  ->  within the density range
+    ok 1 cup of sugar (200 g)  ->  within the density range
+    ok 1/2 cup of butter (113 g)  ->  within the density range
+    ok 1 cup of milk (240 ml)  ->  rounded as written
+    verdict: verified (5 conversions checked, 5 hold)
+
+[2] Distances, heights and speeds
+    answer: "The trail is 10 km (6.2 miles) and climbs 800 m (2,600 ft) to a summit at 3,000 m (9,000 ft). The drive is 120 miles, or about 190 km, at 100 km/h (62 mph). The hut is 5 miles (3.1 km) away, up a 6 ft = 1.82 m step."
+    ok 10 km (6.2 miles)  ->  rounded as written
+    ok 800 m (2,600 ft)  ->  rounded as written
+    XX 3,000 m (9,000 ft)  ->  wrong
+    ok 120 miles, or about 190 km  ->  rounded as written
+    ok 100 km/h (62 mph)  ->  rounded as written
+    XX 5 miles (3.1 km)  ->  wrong (factor inverted)
+    ?? 6 ft = 1.82 m  ->  misrounded
+    verdict: wrong (7 conversions checked, 4 hold, 1 to check, 2 wrong)
+    - 3,000 m is 9,843 ft, not 9,000 ft.
+    - 5 miles is 8.05 km, not 3.1 km. 3.1 km applies the conversion factor the wrong way round.
+    - 6 ft is 1.8288 m, which rounds to 1.83 m, not 1.82 m.
+
+[3] Temperatures: readings and changes
+    answer: "Water boils at 100°C (212°F) and freezes at 0°C (32°F); -40°C is -40°F. Tomorrow will be 10°C (50°F) warmer. In Fahrenheit, a 100°C oven is 180°F."
+    ok 100°C (212°F)  ->  exact
+    ok 0°C (32°F)  ->  exact
+    ok -40°C is -40°F  ->  exact
+    XX 10°C (50°F)  ->  wrong (change converted as a reading)
+    XX 100°C oven is 180°F  ->  wrong (offset left out)
+    verdict: wrong (5 conversions checked, 3 hold, 2 wrong)
+    - As a change, 10°C is 18°F, not 50°F. 50°F converts it as a reading, adding the offset between the scales.
+    - 100°C is 212°F, not 180°F. 180°F leaves out the offset between the scales, which only a change in temperature would.
+
+[4] Which gallon, which gigabyte, which ton
+    answer: "A 1 TB drive is 931 GB. A 1 gallon (4.5 L) tin covers a room, and the pallet weighs 1 ton (1,000 kg)."
+    ?? 1 TB drive is 931 GB  ->  holds only for the binary GB (2^30 bytes)
+    ?? 1 gallon (4.5 L)  ->  holds only for the imperial gallon
+    ?? 1 ton (1,000 kg)  ->  holds only for the metric tonne (1,000 kg)
+    verdict: caution (3 conversions checked, 0 hold, 3 to check)
+    - 1 TB is 1000 GB with the decimal GB (10^9 bytes); 931 GB holds only with the binary GB (2^30 bytes).
+    - 1 gallon is 3.79 L with the US gallon; 4.5 L holds only with the imperial gallon.
+    - 1 ton is 907 kg with the short ton (2,000 lb); 1,000 kg holds only with the metric tonne (1,000 kg).
+    under .lenient: verified (3 conversions checked, 3 hold)
+
+[5] Areas, and powers of ten
+    answer: "The flat is 50 m² (164 sq ft), the garden 2 hectares (5 acres), and the tablet is 500 mg (5 g)."
+    XX 50 m² (164 sq ft)  ->  wrong (length factor on an area)
+    ok 2 hectares (5 acres)  ->  rounded as written
+    XX 500 mg (5 g)  ->  wrong (off by 10^1)
+    verdict: wrong (3 conversions checked, 1 hold, 2 wrong)
+    - 50 m² is 538 sq ft, not 164 sq ft. 164 sq ft uses the length factor where the square of it applies.
+    - 500 mg is 0.5 g, not 5 g. 5 g is off by a factor of 10.
+
+[6] Volume to weight needs a density
+    answer: "Use 1 cup of rice (185 g) and 2 cups of stock (480 g)."
+    ok 1 cup of rice (185 g)  ->  within the density range
+    -- 2 cups of stock (480 g)  ->  unchecked: no density
+    verdict: unchecked (2 conversions checked, 1 hold, 1 unchecked)
+    2 cups to 480 g turns a volume into a mass, which depends on what is measured, and nothing named next to it has a known density.
+    with stock added to the table:
+    ok 1 cup of rice (185 g)  ->  within the density range
+    ok 2 cups of stock (480 g)  ->  within the density range
+    verdict: verified (2 conversions checked, 2 hold)
+
+[7] What is left alone
+    | - Splits: 5 km, 10 km and 21.1 km.
+    | - Train for 5 km or 10 miles, whichever suits.
+    | - The drive is 300 km (4 hours).
+    | - Choose 16 GB (or 32 GB).
+    | ```swift
+    | let route = "5 km (3 mi)"
+    | ```
+    conversions read: 0 (a list, two alternatives, a time, the same unit twice, code)
+
+[8] A conversation: the same mistake twice
+    turn 1: "A marathon is 42.195 km (26.2 miles) and a 10K is 10 km (6.8 miles)."
+    ok 42.195 km (26.2 miles)  ->  rounded as written
+    XX 10 km (6.8 miles)  ->  wrong
+    verdict: wrong (2 conversions checked, 1 hold, 1 wrong)
+    turn 2: "You're right to ask. A 10K is 10 km (6.8 miles), so about a quarter of a marathon."
+    XX 10 km (6.8 miles)  ->  wrong
+    verdict: wrong (1 conversion checked, 0 hold, 1 wrong, 1 repeated)
+    Unit check: 10 km is 6.21 miles, not 6.8 miles. Some of this was stated again after a correction was asked for.
+    turn 3: "Correction: a 10K is 10 km (6.2 miles)."
+    ok 10 km (6.2 miles)  ->  rounded as written
+    verdict: verified (1 conversion checked, 1 hold)
+    ledger: 3 reviews, 4 conversions, 2 flagged, 1 repeated

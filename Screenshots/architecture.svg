@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="600" viewBox="0 0 1180 600">
+<rect width="1180" height="600" rx="12" fill="#0f172a"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#94a3b8"/></marker></defs>
+<text x="590" y="36" fill="#e2e8f0" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">UnitClaimKit</text>
+<text x="590" y="60" fill="#94a3b8" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle">do&#160;the&#160;unit&#160;conversions&#160;an&#160;answer&#160;states&#160;hold,&#160;once&#160;they&#160;are&#160;done&#160;exactly?</text>
+<rect x="30" y="90" width="220" height="100" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="140.0" y="114" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ProviderGatewayKit</text>
+<text x="140.0" y="136" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">sends&#160;the&#160;turn</text>
+<text x="140.0" y="154" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">the&#160;answer&#160;comes&#160;back</text>
+<rect x="290" y="90" width="300" height="210" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="440.0" y="114" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ConversionReader</text>
+<text x="440.0" y="136" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">QuantityScanner:&#160;numbers&#160;as&#160;written</text>
+<text x="440.0" y="154" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">(1,609.34,&#160;&#189;,&#160;1&#160;1/2,&#160;-40,&#160;a,&#160;two)&#160;+&#160;380&#160;aliases</text>
+<text x="440.0" y="172" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">(km,&#160;&#176;F,&#160;sq&#160;ft,&#160;fl&#160;oz,&#160;GB,&#160;kcal,&#160;psi&#160;...);</text>
+<text x="440.0" y="190" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">ranges&#160;5&#8211;10&#160;km;&#160;code&#160;skipped</text>
+<text x="440.0" y="208" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">Link:&#160;(&#160;=&#160;&#8776;&#160;is&#160;about&#160;,&#160;or&#160;,&#160;which&#160;is</text>
+<text x="440.0" y="226" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">weighs&#160;...;&#160;&quot;2&#160;cups&#160;of&#160;flour&#160;(&quot;,&#160;&quot;drive&#160;is&quot;;</text>
+<text x="440.0" y="244" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">bare&#160;or&#160;and&#160;/&#160;only&#160;across&#160;systems</text>
+<text x="440.0" y="262" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">&#160;and&#160;within&#160;a&#160;factor&#160;of&#160;three</text>
+<rect x="630" y="90" width="250" height="210" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="1.5"/>
+<text x="755.0" y="114" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">UnitCatalog</text>
+<text x="755.0" y="136" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">102&#160;sizes,&#160;11&#160;dimensions,&#160;exact</text>
+<text x="755.0" y="154" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">fractions&#160;(&#176;F&#160;is&#160;5/9&#160;K&#160;+&#160;offset)</text>
+<text x="755.0" y="172" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">sizes&#160;per&#160;word,&#160;usual&#160;first:</text>
+<text x="755.0" y="190" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">US&#160;/&#160;imperial&#160;gallon,&#160;pint,&#160;cup;</text>
+<text x="755.0" y="208" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">short&#160;/&#160;long&#160;/&#160;metric&#160;ton;</text>
+<text x="755.0" y="226" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">decimal&#160;/&#160;binary&#160;GB;&#160;kcal&#160;/&#160;cal</text>
+<text x="755.0" y="244" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">DensityTable:&#160;10&#160;kitchen&#160;staples,</text>
+<text x="755.0" y="262" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">density&#160;as&#160;a&#160;range&#160;(flour&#160;0.50&#8211;0.60)</text>
+<rect x="920" y="90" width="230" height="210" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="1035.0" y="114" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ConversionClaim</text>
+<text x="1035.0" y="136" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">source&#160;&#8594;&#160;target</text>
+<text x="1035.0" y="154" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">isApproximate</text>
+<text x="1035.0" y="172" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">isDifference&#160;(&#176;C&#160;warmer,</text>
+<text x="1035.0" y="190" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">rose&#160;by,&#160;swing&#160;...)</text>
+<text x="1035.0" y="208" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">substance&#160;(of&#160;flour,&#160;flour:)</text>
+<text x="1035.0" y="226" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">excerpt,&#160;offsets</text>
+<rect x="290" y="340" width="590" height="150" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+<text x="585.0" y="364" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ConversionEvaluator</text>
+<text x="585.0" y="386" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">exact&#160;&#183;&#160;rounded&#160;(digits&#160;or&#160;round&#160;figure,&#160;within&#160;tolerance)&#160;&#183;&#160;approximate&#160;&#183;&#160;plausible&#160;(density&#160;range)</text>
+<text x="585.0" y="404" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">misrounded&#160;&#183;&#160;otherConvention&#160;(closest&#160;fit)&#160;&#183;&#160;loose&#160;(close&#160;but&#160;unmarked)</text>
+<text x="585.0" y="422" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">wrong&#160;+&#160;slip:&#160;inverted&#160;&#183;&#160;offsetAdded&#160;&#183;&#160;offsetDropped&#160;&#183;&#160;lengthFactor&#160;&#183;&#160;waterDensity&#160;&#183;&#160;powerOfTen</text>
+<text x="585.0" y="440" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">needsDensity&#160;&#8594;&#160;unchecked&#160;&#160;&#160;&#160;&#160;policies:&#160;.standard&#160;5%&#160;/&#160;5&#160;K&#160;&#183;&#160;.lenient&#160;&#183;&#160;.strict</text>
+<rect x="920" y="340" width="230" height="150" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1.5"/>
+<text x="1035.0" y="364" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ConversionReport</text>
+<text x="1035.0" y="386" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">verdict:&#160;noConversions,</text>
+<text x="1035.0" y="404" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">verified,&#160;unchecked,</text>
+<text x="1035.0" y="422" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">caution,&#160;wrong</text>
+<text x="1035.0" y="440" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">note&#160;&#183;&#160;feedback&#160;&#183;&#160;summary</text>
+<rect x="30" y="340" width="220" height="150" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="140.0" y="364" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ConversionLedger</text>
+<text x="140.0" y="386" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">actor,&#160;one&#160;per&#160;conversation</text>
+<text x="140.0" y="404" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">a&#160;flagged&#160;conversion&#160;stated</text>
+<text x="140.0" y="422" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">again&#160;is&#160;marked&#160;repeated</text>
+<text x="140.0" y="440" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle">statistics,&#160;forget()</text>
+<line x1="250" y1="140" x2="288" y2="140" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="590" y1="195" x2="628" y2="195" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="880" y1="195" x2="918" y2="195" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="1035" y1="300" x2="1035" y2="338" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="918" y1="415" x2="882" y2="415" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="588" y1="300" x2="588" y2="338" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="288" y1="415" x2="252" y2="415" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="590" y="540" fill="#94a3b8" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">No&#160;network,&#160;no&#160;dependencies.&#160;Decimal&#160;arithmetic,&#160;multiply&#160;before&#160;divide,&#160;so&#160;100&#176;C&#160;&#8594;&#160;212&#176;F&#160;comes&#160;out&#160;exact.</text>
+<text x="590" y="564" fill="#94a3b8" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Sits&#160;beside&#160;NumberBindingKit&#160;(figures&#160;against&#160;evidence)&#160;and&#160;ArithmeticClaimKit&#160;(arithmetic&#160;with&#160;no&#160;units).</text>
+</svg>
